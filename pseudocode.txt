@@ -1,0 +1,31 @@
+def init(num_lines, line_length, initial_user)
+    index = 0
+    num_lines = num_lines
+    max_line_length = line_length
+    lines = Array(string)[num_lines]
+    users = Array(address)[num_lines]
+    users[0] = initial_user
+
+def add_line(line, next_user)
+    throw if index >= num_lines
+    throw if current_user != users[index]
+    throw if line.length > max_line_length
+
+    lines[index] = line
+
+def finish(next_user)
+    throw if index >= num_lines
+    throw if current_user != users[index]
+    throw if users.include? next_user
+
+    index++
+    return if index >= num_lines
+    users[index] = next_user
+
+# off chain
+def lines_remaining
+    return (num_lines - index)
+
+# off chain
+def read_story
+    return lines.join("\n")
