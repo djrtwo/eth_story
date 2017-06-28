@@ -5,5 +5,5 @@ var numLines = 10;
 var lineLength = 50;
 
 module.exports = function(deployer) {
-  deployer.deploy(BlockStory, numLines, lineLength);
+  deployer.deploy(BlockStory, web3.eth.accounts[0], numLines, lineLength);
 };
