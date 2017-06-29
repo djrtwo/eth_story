@@ -6,6 +6,6 @@ story at a time, specifying the next user for the next line.
 Initial story contract built out and being tested.
 
 ### TO DO
-Add frontend
-Add parent contract to create stories
-Add model for submitting and approving edits to story
+  - Add frontend
+  - Add parent contract to create stories
+  - Add model for submitting and approving edits to story
